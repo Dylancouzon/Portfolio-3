@@ -1,4 +1,4 @@
-// Get all the characters for this user
+// Get the Data for the main project
 getMain = async () => {
     const response = await fetch('/api/getmain');
     const res = await response.json();
@@ -7,6 +7,7 @@ getMain = async () => {
     }
 }
 
+// Get the Data for the other projects
 getOthers = async () => {
     const response = await fetch('/api/getothers');
     const res = await response.json();
@@ -15,6 +16,7 @@ getOthers = async () => {
     }
 }
 
+// Generate HTML for the main project
 generateMain = (mainData) => {
         const mainProject = `
         <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
@@ -44,6 +46,7 @@ generateMain = (mainData) => {
         $("#mainProject").append(mainProject);
 }
 
+// Generate cards for the other projects
 generateOthers = (otherData) => {
     otherData.forEach((card) => {
         const content = `
