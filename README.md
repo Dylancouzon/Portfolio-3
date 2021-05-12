@@ -38,7 +38,7 @@ npm start then browse http://localhost:3000
 ```
 
 ## Code Snippet  
-```Javascript
+```Javascript 
 {
     name: "FarQuest",
     description: "A role-playing game of medieval fantasy.<br><br>Select from a hero class of Knights, Wizards, Huntresses, or be an Assassin. Explore a rich world of story-telling, battles, and surprises as you journey to see the King.<br><br>",
