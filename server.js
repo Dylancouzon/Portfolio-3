@@ -24,7 +24,7 @@ db.Projects.findOne({})
                     description: "A role-playing game of medieval fantasy.<br><br>Select from a hero class of Knights, Wizards, Huntresses, or be an Assassin. Explore a rich world of story-telling, battles, and surprises as you journey to see the King.<br><br>",
                     image: "FarQuest.png",
                     githubLink: "https://github.com/Dylancouzon/farQuest",
-                    deployedLink: "https://farquest.herokuapp.com/",
+                    deployedLink: "https://farquest.herokuapp.com",
                     main: 1
                 },
                 {
@@ -43,7 +43,7 @@ db.Projects.findOne({})
                     name: "Weather Dashboard",
                     image: "dashboard.png",
                     githubLink: "https://github.com/Dylancouzon/Weather-Dashboard",
-                    deployedLink: "https://github.com/Dylancouzon/Weather-Dashboard"
+                    deployedLink: "https://dylancouzon.github.io/Weather-Dashboard"
                 }
             ]);
         }
@@ -52,7 +52,7 @@ db.Projects.findOne({})
 
 
 
-app.get("api/getmain", (_, res) => {
+app.get("/api/getmain", (_, res) => {
     db.Projects.findOne({ main: true })
         .then(mainProject => {
             res.json(mainProject);
@@ -62,7 +62,7 @@ app.get("api/getmain", (_, res) => {
         });
 });
 
-app.get("api/getothers", async (_, res) => {
+app.get("/api/getothers", async (_, res) => {
     const test = await db.Projects.find({ main: false })
         .then(otherProjects => {
             res.json(otherProjects);
