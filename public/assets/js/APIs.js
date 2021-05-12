@@ -52,9 +52,9 @@ generateOthers = (otherData) => {
             style="background-image: url('assets/images/${card.image}'); background-size: cover; ">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <a target="_blank"
-                    style="text-decoration:none; color:white;  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;"
+                    style="text-decoration:none; color:white;  -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;"
                     href="${card.deployedLink}">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">${card.name}</h2>
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" id="cardName">${card.name}</h2>
                 </a>
                 <a href="${card.githubLink}" target="_blank"><img
                         src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"

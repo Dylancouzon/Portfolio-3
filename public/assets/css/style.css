@@ -1,7 +1,33 @@
 .b-divider {
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  height: 3rem;
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+#navBar {
+  background: linear-gradient(266deg, #929292, #000000);
+  background-size: 400% 400%;
+  animation: colorAnimation 30s ease infinite;
+}
+
+#aboutMe, #contactMe, .b-divider {
+  color:#d6d6d6;
+  background: linear-gradient(266deg, #929292, #4b4a4a);
+  background-size: 400% 400%;
+
+  animation: colorAnimation 40s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes colorAnimation {
+  0% {
+    background-position: 0% 50%
   }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
