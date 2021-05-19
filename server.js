@@ -42,7 +42,7 @@ db.Projects.findOne({})
                 {
                     name: "Flag Game",
                     image: "clickyGame.png",
-                    githubLink: "https://github.com/Dylancouzon/Clicky-Game",
+                    githubLink: "https://github.com/Dylancouzon/Clicky-Game", 
                     deployedLink: "https://dylancouzon.github.io/Clicky-Game/"
                 }
             ]);
