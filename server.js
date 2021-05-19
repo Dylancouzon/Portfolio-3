@@ -40,10 +40,10 @@ db.Projects.findOne({})
                     deployedLink: "https://dylancouzon.github.io/day-planner"
                 },
                 {
-                    name: "Weather Dashboard",
-                    image: "dashboard.png",
-                    githubLink: "https://github.com/Dylancouzon/Weather-Dashboard",
-                    deployedLink: "https://dylancouzon.github.io/Weather-Dashboard"
+                    name: "Flag Game",
+                    image: "clickyGame.png",
+                    githubLink: "https://github.com/Dylancouzon/Clicky-Game",
+                    deployedLink: "https://dylancouzon.github.io/Clicky-Game/"
                 }
             ]);
         }
